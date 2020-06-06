@@ -75,6 +75,10 @@ a {
   color: var(--accent-color);
 }
 
+.list {
+  list-style: none;
+}
+
 .list-works {
   font-weight: 500;
   font-size: 16px;
@@ -108,7 +112,6 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
-
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -134,7 +137,6 @@ a {
 }
 
 .go {
-  color: ;
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -205,7 +207,6 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
   color: var(--secondary-text-color);
 }
 
@@ -218,7 +219,6 @@ h3 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 .type-works {
@@ -227,20 +227,18 @@ h3 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: var(--primary-white-color);
 }
 
-.teams {
+.team {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
-.name-teams {
+.name-team {
   list-style: none;
 }
 .name {
@@ -248,15 +246,13 @@ h3 {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
-.teams-text {
+.team-text {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 
@@ -266,7 +262,6 @@ h3 {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
 
