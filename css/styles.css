@@ -5,10 +5,10 @@
   --primary-white-color: #ffffff;
   --secondary-text-color: #757575;
 }
+
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
@@ -27,12 +27,15 @@ a {
   color: #2196f3;
 }
 
+.mail-color {
+  color: #2196f3;
+}
+
 .logo {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-
   letter-spacing: 0.03em;
   text-decoration: none;
 }
@@ -104,18 +107,25 @@ a {
   font-style: normal;
   list-style: none;
 }
-.text {
-  color: var(--secondary-text-color);
-}
 
-.adress .text {
+.adress {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--primary-white-color);
+}
+
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 .adress .version {
   font-style: normal;
@@ -255,7 +265,7 @@ h3 {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: var(--secondary-text-color);
 }
 
 .clients {
@@ -271,4 +281,12 @@ h3 {
 .clients.list:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+.dev-by {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
 }
