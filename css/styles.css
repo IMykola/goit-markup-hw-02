@@ -5,7 +5,6 @@
   --primary-white-color: #ffffff;
   --secondary-text-color: #757575;
 }
-
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
@@ -13,6 +12,7 @@ body {
   font-style: normal;
   font-size: 14px;
 }
+
 h2 {
   font-weight: bold;
   font-size: 18px;
@@ -21,16 +21,18 @@ h2 {
 
 a {
   color: #212121;
+  text-decoration: none;
+}
+
+
+
+.mail-color {
+  color: var(--secondary-text-color);
 }
 
 .logo > span {
   color: #2196f3;
 }
-
-.mail-color {
-  color: #2196f3;
-}
-
 .logo {
   font-family: Raleway;
   font-weight: bold;
@@ -38,41 +40,74 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  color: var(--title-text-color);
 }
 
-.logo:hover,
-.logo:focus {
+.logo:hover
+.logo:focus 
+.logo:active {
   color: var(--accent-color);
 }
-.site-nav .link {
+.site-nav {
+  list-style: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--secondary-text-color)
+  
 }
-.site-nav a {
-  text-decoration: none;
+.link {
+  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color)
+  
+}
+
+.link :active {color: var(--accent-color);}
+
+.mail-color :hover,
+.mail-color :focus 
+{
+  color: var(--accent-color);
+}
+
 }
 .site-nav {
   list-style: none;
 }
-
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
 }
+
+.site-nav .link.current {
+    color: var(--accent-color);
+}
+
+.button {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  list-style: none;
+  }
 
 .auth-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
   list-style: none;
+  color: var(--secondary-text-color)
 }
-.button {
-  text-decoration: none;
-}
+
+
 .auth-nav .button:hover,
 .auth-nav .button:focus {
   color: var(--accent-color);
@@ -122,7 +157,7 @@ a {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -174,6 +209,9 @@ a {
   background-color: var(--accent-color);
 }
 
+.current {
+    color: var(--accent-color)
+}
 .hero {
   text-align: center;
 }
@@ -289,4 +327,25 @@ h3 {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  background-color: #2F303A
+}
+
+.logo-2 > span {
+  color: #2196f3;
+}
+.logo-2 {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--primary-white-color);
+  background-color:  #2f303a     ;
+}
+
+.logo-2 :hover
+.logo-2 :focus 
+.logo-2 :active {
+  color: var(--accent-color);
 }
