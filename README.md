@@ -1,2 +1,2 @@
-# goit-markup-hw-01
-FE Core 23 Online: html-css homework 1
+# goit-markup-hw-02
+FE Core 42 Online: html-css homework 2
