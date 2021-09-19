@@ -171,14 +171,6 @@ footer {
   color: var(--accent-color);
 }
 
-.go {
-  font-weight: bold;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
-}
-
 .news {
   font-weight: bold;
   line-height: 1.14px;
