@@ -45,14 +45,12 @@ footer {
   color: var(--accent-color);
 }
 .site-nav {
-  list-style: none;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 .link {
-  list-style: none;
   text-decoration: none;
   color: inherit;
 }
@@ -99,10 +97,6 @@ footer {
 }
 
 .list {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
   list-style: none;
 }
 
@@ -112,7 +106,6 @@ footer {
   line-height: 1.63;
   letter-spacing: 0.03em;
   text-decoration: none;
-  list-style: none;
   border-radius: 4px;
   background-color: #f5f4fa;
   cursor: pointer;
@@ -120,7 +113,6 @@ footer {
 }
 
 .filter {
-  list-style: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62px;
@@ -139,7 +131,6 @@ footer {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  list-style: none;
 }
 
 .adress {
@@ -177,9 +168,6 @@ footer {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-}
-.social-site {
-  list-style: none;
 }
 
 .current {
@@ -219,13 +207,11 @@ footer {
 }
 
 .title {
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
-.works-list {
-  list-style: none;
-}
-.title-main-works {
+.title-main {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -241,17 +227,6 @@ footer {
   color: var(--primary-white-color);
 }
 
-.team {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
-.name-team {
-  list-style: none;
-}
 .name {
   font-weight: 500;
   font-size: 16px;
