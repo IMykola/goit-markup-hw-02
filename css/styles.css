@@ -25,7 +25,7 @@ footer {
   color: var(--secondary-text-color);
 }
 
-.a {
+.alink {
   color: var(--primary-text-color);
   text-decoration: none;
 }
@@ -38,7 +38,6 @@ footer {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
   color: var(--title-text-color);
 }
 
@@ -50,14 +49,12 @@ footer {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
+  color: var(--primary-text-color);
 }
 .link {
   list-style: none;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--primary-text-color);
+  text-decoration: none;
+  color: inherit;
 }
 
 .link.current {
@@ -84,11 +81,6 @@ footer {
 
 .button {
   text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
-  text-decoration: none;
   list-style: none;
   cursor: pointer;
 }
@@ -107,6 +99,10 @@ footer {
 }
 
 .list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
   list-style: none;
 }
 
@@ -120,16 +116,20 @@ footer {
   border-radius: 4px;
   background-color: #f5f4fa;
   cursor: pointer;
+  font-family: inherit;
 }
+
 .filter {
   list-style: none;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62px;
+  font-family: inherit;
 }
 
 .list-works:hover,
-.list-works:focus {
+.list-works:focus,
+.current-button {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -196,11 +196,8 @@ footer {
 .hero {
   text-align: center;
   background-color: var(--background-color);
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
 }
+
 .title-hero {
   text-align: center;
   font-weight: 900;
@@ -214,27 +211,23 @@ footer {
 .button-hero {
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
-.proposition {
-  list-style: none;
-}
-.proposition-img:hover,
-.proposition-img:focus {
-  background-color: var(--accent-color);
+  border-radius: 4px;
+  font-family: inherit;
 }
 
 .proposition-text {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+
+.title {
+  text-transform: uppercase;
 }
 
 .works-list {
