@@ -4,88 +4,82 @@
   --accent-color: #18a0fb;
   --primary-white-color: #ffffff;
   --secondary-text-color: #757575;
+  --logo-color: #2196f3;
+  --background-color: #2f303a;
 }
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
+  font-weight: 400;
   font-style: normal;
   font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
+footer {
+  background-color: var(--background-color);
 }
-
-a {
-  color: #212121;
-  text-decoration: none;
-}
-
-
 
 .mail-color {
   color: var(--secondary-text-color);
 }
 
+.a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
 .logo > span {
-  color: #2196f3;
+  color: var(--logo-color);
 }
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, cursive;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--title-text-color);
 }
 
-.logo:hover
-.logo:focus 
-.logo:active {
+.logo:hover .logo:focus .logo:active {
   color: var(--accent-color);
 }
 .site-nav {
   list-style: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--secondary-text-color)
-  
+  color: var(--secondary-text-color);
 }
 .link {
   list-style: none;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--primary-text-color)
-  
+  color: var(--primary-text-color);
 }
 
-.link :active {color: var(--accent-color);}
-
-.mail-color :hover,
-.mail-color :focus 
-{
+.link.current {
   color: var(--accent-color);
 }
 
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
+
+.mail-color :hover,
+.mail-color :focus {
+  color: var(--accent-color);
+}
+
 .site-nav {
   list-style: none;
 }
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--accent-color);
-}
-
-.site-nav .link.current {
-    color: var(--accent-color);
 }
 
 .button {
@@ -96,17 +90,16 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
   list-style: none;
-  }
+  cursor: pointer;
+}
 
 .auth-nav {
-  font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   list-style: none;
-  color: var(--secondary-text-color)
+  font-style: normal;
+  color: var(--secondary-text-color);
 }
-
 
 .auth-nav .button:hover,
 .auth-nav .button:focus {
@@ -124,9 +117,15 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
   list-style: none;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  cursor: pointer;
 }
 .filter {
   list-style: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62px;
 }
 
 .list-works:hover,
@@ -134,48 +133,37 @@ a {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+
 .work-list {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  font-style: normal;
   list-style: none;
 }
 
 .adress {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  text-decoration: none;
+  text-transform: none;
 }
 
 .text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.adress .version {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
+.version {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 .version {
-  background-color: #2f303a;
-}
-.adress .text {
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 
 .adress .version:hover,
@@ -185,49 +173,45 @@ a {
 
 .go {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 
 .news {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--primary-text-color);
 }
 .social-site {
   list-style: none;
 }
-.link-social:hover,
-.link-social:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-}
 
 .current {
-    color: var(--accent-color)
+  color: var(--accent-color);
 }
 .hero {
   text-align: center;
+  background-color: var(--background-color);
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
 }
 .title-hero {
+  text-align: center;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 .button-hero {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
@@ -244,14 +228,7 @@ a {
 .proposition-img:focus {
   background-color: var(--accent-color);
 }
-h3 {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--primary-text-color);
-}
+
 .proposition-text {
   font-weight: normal;
   font-size: 14px;
@@ -273,7 +250,6 @@ h3 {
 }
 .type-works {
   font-weight: bold;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -321,17 +297,15 @@ h3 {
   background-color: var(--accent-color);
 }
 .dev-by {
-  font-family: Roboto;
-  font-style: normal;
   font-size: 12px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
-  background-color: #2F303A
+  background-color: #2f303a;
 }
 
 .logo-2 > span {
-  color: #2196f3;
+  color: var(--logo-color);
 }
 .logo-2 {
   font-family: Raleway;
@@ -341,11 +315,9 @@ h3 {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--primary-white-color);
-  background-color:  #2f303a     ;
+  background-color: var(--background-color);
 }
 
-.logo-2 :hover
-.logo-2 :focus 
-.logo-2 :active {
+.logo-2 :hover .logo-2 :focus .logo-2 :active {
   color: var(--accent-color);
 }
